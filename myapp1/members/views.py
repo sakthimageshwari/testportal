@@ -69,4 +69,7 @@ def record(request):
         elements = Q_A.objects.filter(id=a).values()         
         context = {'myelements':elements,'score':score,}
         return HttpResponse(template.render(context,request))
+print('hi')    
+
+
     
